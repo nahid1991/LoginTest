@@ -57,7 +57,7 @@ return [
 			'host'      => 'localhost',
 			'database'  => 'forum',//'nahid',
 			'username'  => 'root',
-			'password'  => '',//'admin',
+			'password'  => '',//
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

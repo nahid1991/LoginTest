@@ -23,11 +23,18 @@
 //Route::bind('tag', function($value, $route){
 //    return Tag::where('id', $value)->first();
 //});
+
+Route::filter('no-cache',function($route, $request, $response){
+    $response->headers->set('Cache-Control','nocache, no-store, max-age=0, must-revalidate');
+    $response->headers->set('Pragma','no-cache');
+    $response->headers->set('Expires','Fri, 01 Jan 1990 00:00:00 GMT');
+});
+
 Route::get('/', 'NewController@index');
 Route::get('/guest', 'NewController@guest');
 Route::controllers(['auth' => 'Auth\AuthController']);
 Route::get('/homepage', 'HomeController@emergency');
-Route::group(['middlware' => 'auth'], function () {
+Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
 	Route::get('/dash-board', 'DashBoardController@index');
 	Route::get('/student', 'DashBoardController@student');
 });
