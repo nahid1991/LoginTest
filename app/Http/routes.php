@@ -25,10 +25,12 @@
 //});
 Route::get('/', 'NewController@index');
 Route::get('/guest', 'NewController@guest');
-Route::get('/dash-board', 'DashBoardController@index');
-Route::get('/student', 'DashBoardController@student');
 Route::controllers(['auth' => 'Auth\AuthController']);
 Route::get('/homepage', 'HomeController@emergency');
+Route::group(['middlware' => 'auth'], function () {
+	Route::get('/dash-board', 'DashBoardController@index');
+	Route::get('/student', 'DashBoardController@student');
+});
 //Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::get('/auth/register', 'Auth\AuthController@getRegister');
 Route::get('/auth/login', 'Auth\AuthController@getLogin');

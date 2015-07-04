@@ -55,9 +55,9 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forum',
+			'database'  => 'forum',//'nahid',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => '',//'admin',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
