@@ -1,8 +1,10 @@
 <html>
 	<head>
-		<title>Laravel</title>
-		
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		<title>NSU Forum</title>
+        <META http-equiv="refresh" content="5;URL=/">
+
+
+        <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
 		<style>
 			body {
@@ -40,8 +42,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title" style="color:#4E0110; font-weight: 900" >You have to Log in first to see this page.</div>
+				<div class="quote" style="color:#881600; font-weight: 900">{{ Inspiring::quote() }}</div>
 			</div>
 		</div>
 	</body>

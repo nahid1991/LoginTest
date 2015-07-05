@@ -15,6 +15,7 @@
         <ul class="nav navbar-nav">
             <li><a href="{{ url('/dash-board') }}">Home</a></li>
             <li><a href="{{ url('/tags') }}">Create Tag</a></li>
+            <li><a href='/resetpass'>Change Password</a></li>
         </ul>
         @foreach($tags as $tag)
             <ul class="nav navbar-nav">
@@ -26,6 +27,7 @@
             @if (Auth::guest())
                 <li><a href="{{ url('/auth/login') }}">Login</a></li>
                 <li><a href="{{ url('/auth/register') }}">Register</a></li>
+
             @else
                 {{--<ul class="nav navbar-new">--}}
                 {{--<li><a href="{{ url('/auth/logout') }}>Logout</a></li>--}}
@@ -33,6 +35,7 @@
                 <li>
                     <a href='/auth/logout'>Logout</a>
                 </li>
+
                 {{--<li class="dropdown">--}}
                 {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->username }} <span class="caret"></span></a>--}}
                 {{--<ul class="dropdown-menu" role="menu">--}}

@@ -14,12 +14,12 @@ class NewController extends Controller {
 	 */
     public function index()
     {
-        return view('homepage');
+        return view('auth.login');
     }
 
 	public function guest()
     {
-        echo ("guest");
+        return view('welcome');
     }
 
 }

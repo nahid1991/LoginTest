@@ -131,6 +131,20 @@ class AuthController extends Controller {
         return redirect('/');
     }
 
+    public function reset()
+    {
+//        $user = \Auth::user();
+//        return view('otherspassword');
+        echo("works");
+    }
+
+    public function resetadmin()
+    {
+//        $user = \Auth::user();
+//        return view('adminpassword');
+        echo("works");
+    }
+
 
 
 
