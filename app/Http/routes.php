@@ -32,7 +32,10 @@ Route::filter('no-cache',function($route, $request, $response){
 
 Route::get('/', 'NewController@index');
 Route::get('/guest', 'NewController@guest');
-Route::controllers(['auth' => 'Auth\AuthController']);
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
 //Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::get('/auth/register', 'Auth\AuthController@getRegister');
 Route::get('/auth/login', 'Auth\AuthController@getLogin');
@@ -49,8 +52,6 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
     Route::get('/registration', 'AdminController@registration');
     Route::post('/registration/now', 'AdminController@registerNow');
     Route::get('/homepage', 'HomeController@emergency');
-    Route::get('/resetpass', 'Auth\AuthController@reset');
-    Route::get('/reset', 'Auth\AuthController@resetadmin');
 
 });
 

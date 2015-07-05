@@ -33,7 +33,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-                    <li><a href="{{ url('/reset') }}">Change Password</a></li>
+                    <li><a href="{{ url('/password/email') }}">Change Password</a></li>
 					<li><a href="{{ url('/homepage') }}">Home</a></li>
                     <li><a href="{{ url('/ece') }}">ECE Faculties</a></li>
                     <li><a href="{{ url('/bba') }}">BBA Faculties</a></li>
