@@ -8,6 +8,9 @@
     <title>NSU Forum</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/select2.min.css') }}" rel="stylesheet">
+
+    <script src="/js/select2.min.js"></script>
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -30,6 +33,16 @@
 <div class="row">
     @yield('main')
 </div>
+
+<div class="row">
+    @yield('question')
+</div>
+
+<div class="row" style="margin-top: 20px">
+    @yield('footer')
+</div>
+
+
 
 
 <!-- Scripts -->

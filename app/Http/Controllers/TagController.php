@@ -20,11 +20,11 @@ class TagController extends Controller {
 	{
         $user = \Auth::user();
         $tags = DB::table('tag_faculty')
-            ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
             ->join('users', 'tag_faculty.username', '=', 'users.username')
+            ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
             ->where('users.username', $user->username)
             ->get();
-        return view('tag', compact('tags', 'user'));
+        return view('dashboard', compact('tags', 'user'));
 	}
 
 	/**
@@ -73,14 +73,14 @@ class TagController extends Controller {
 //                ->join('users', 'tag_faculty.username', '=', 'users.username')
 //                ->where('users.username', $user->username)
 //                ->get();
-            return redirect('/tags');
+            return redirect('/dash-board');
 
         }
 
         else {
             $error = "Your tag limit has exceeded";
 
-            return redirect('/tags')->withErrors($error);
+            return redirect('/dash-board')->withErrors($error);
         }
 
 
@@ -115,7 +115,7 @@ class TagController extends Controller {
         }
         else{
             $tag->delete();
-            return redirect('tags');
+            return redirect('/dash-board');
         }
     }
 }

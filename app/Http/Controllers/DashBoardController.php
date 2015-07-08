@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Tag;
 
 class DashBoardController extends Controller {
 
@@ -23,13 +24,14 @@ class DashBoardController extends Controller {
 
     public function index()
     {
+        $intag = Tag::lists('name', 'id');
         $user = \Auth::user();
         $tags = DB::table('tag_faculty')
             ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
             ->join('users', 'tag_faculty.username', '=', 'users.username')
             ->where('users.username', $user->username)
             ->get();
-        return view('dashboard', compact('tags', 'user'));
+        return view('dashboard', compact('tags', 'user', 'intag'));
     }
 
 	/**
@@ -97,8 +99,12 @@ class DashBoardController extends Controller {
 //	}
 
     public function student(){
+        $intag = Tag::lists('name', 'id');
         $user = \Auth::user();
-        return view('student', compact('user'));
+        $tagStudent = DB::table('tag_student')
+            ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
+            ->where('username', $user->username)->get();
+        return view('student', compact('user','intag', 'tagStudent'));
     }
 
 }

@@ -5,12 +5,12 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="{{ url('/') }}">Home</a></li>
+            <li style="font-size:900%; padding-top:90px"><a href="{{ url('/') }}">NSU Forum</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
             @if (Auth::guest())
-                <li><a href="{{ url('/auth/register') }}">Register</a></li>
+                {{--<li><a href="{{ url('/auth/register') }}">Register</a></li>--}}
             @else
                 {{--<ul class="nav navbar-new">--}}
                 {{--<li><a href="{{ url('/auth/logout') }}>Logout</a></li>--}}
@@ -63,4 +63,17 @@
         {!!Form::close()!!}
     </div>
 
+@stop
+
+@section('footer')
+    <div class="container">
+        <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
+            <p>Powered by Sayed Mahmudul Alam,
+                Nahid Islam, A.S.M. Nesar Uddin Ahmed</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
 @stop

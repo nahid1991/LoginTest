@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -49,8 +50,24 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
     Route::get('/registration', 'AdminController@registration');
     Route::post('/registration/now', 'AdminController@registerNow');
     Route::get('/homepage', 'HomeController@emergency');
-    Route::get('/resetpass', 'Auth\AuthController@reset');
-    Route::get('/reset', 'Auth\AuthController@resetadmin');
+//    Route::get('/reset_pass', 'Auth\AuthController@reset');
+
+//    Route::get('/reset', array('as' => 'reset', 'uses' => 'Auth\AuthController@resetAdmin'));
+    Route::get('/reset', 'PassResetController@index');
+
+    Route::post('reset/pass', 'PassResetController@postPass');
+
+    Route::get('/change', 'NameResetController@name');
+
+    Route::post('/change/name', 'NameResetController@changeName');
+
+    Route::post('/question', 'QuestionController@store');
+
+    Route::post('/tags/student', 'TagStudentController@store');
+
+    Route::get('/tags/student/delete/{tag_id}', array('as' => 'tagDelete', 'uses' => 'TagStudentController@getDelete'));
+
+
 
 });
 

@@ -22,3 +22,15 @@
         </div>
     </div>
 @endsection
+@section('footer')
+    <div class="container">
+        <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
+            <p>Powered by Sayed Mahmudul Alam,
+                Nahid Islam, A.S.M. Nesar Uddin Ahmed</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+@stop

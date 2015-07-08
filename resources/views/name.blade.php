@@ -53,36 +53,38 @@
 @section('main')
     <div class="col-md-8 col-md-offset-2 form-content">
 
-        <h3 class="heading">Password Reset</h3>
+        <h1 class="heading">Change your name</h1>
         @foreach($errors->all() as $error)
             <p class="alert alert-danger">{!!$error!!}</p>
         @endforeach
-        {!!Form::open(['url'=>'/reset/pass','class'=>'form form-horizontal','style'=>'margin-top:50px'])!!}
+        {!!Form::open(['url'=>'/change/name','class'=>'form form-horizontal','style'=>'margin-top:50px'])!!}
 
         {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
         {{--<div class="form-group">--}}
-            {{--{!! Form::label('email','Email:',['class'=>'col-sm-3 control-label']) !!}--}}
-            {{--<div class="col-sm-8">--}}
-                {{--{!! Form::text('email',Input::old('email'),['class'=>'form-control']) !!}--}}
-            {{--</div>--}}
+        {{--{!! Form::label('email','Email:',['class'=>'col-sm-3 control-label']) !!}--}}
+        {{--<div class="col-sm-8">--}}
+        {{--{!! Form::text('email',Input::old('email'),['class'=>'form-control']) !!}--}}
+        {{--</div>--}}
         {{--</div>--}}
         {{--<div class="form-group">--}}
-            {{--{!! Form::label('password','Password:',['class'=>'col-sm-3 control-label']) !!}--}}
-            {{--<div class="col-sm-8">--}}
-                {{--{!! Form::password('password',['class'=>'form-control']) !!}--}}
-            {{--</div>--}}
+        {{--{!! Form::label('password','Password:',['class'=>'col-sm-3 control-label']) !!}--}}
+        {{--<div class="col-sm-8">--}}
+        {{--{!! Form::password('password',['class'=>'form-control']) !!}--}}
+        {{--</div>--}}
         {{--</div>--}}
 
+
+
         <div class="form-group">
-            {!! Form::label('password','New Password:',['class'=>'col-sm-3 control-label']) !!}
-            <div class="col-sm-8">
-                {!! Form::password('passwordNew',['class'=>'form-control']) !!}
+            <div class="form-group" style="padding-left: 30px; padding-right: 30px">
+                {!! Form::label('name', 'Your Name:') !!}
+                {!! Form::text('name', null, ['class'=>'form-control']) !!}
             </div>
         </div>
 
 
         <div class="text-center">
-            {!!Form::submit('Reset Password',['class'=>'btn btn-default'])!!}
+            {!!  Form::submit('Submit', ['class'=>'btn btn-primary form-control']) !!}
         </div>
         {!!Form::close()!!}
     </div>
