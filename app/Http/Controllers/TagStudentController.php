@@ -37,17 +37,28 @@ class TagStudentController extends Controller {
 	{
 
         $user = \Auth::user();
-
+        $tagStudent = $request->input('tag_id');
+        $check = DB::table('tag_student')
+            ->where('tag_student.tag_id', $tagStudent )
+            ->where('tag_student.username', $user->username)
+            ->get();
         $count = DB::table('tag_student')->where('username', $user->username)->count();
         if($count < 6)
         {
-            $tagStudent = $request->input('tag_id');
-//        echo($tagStudent);
-            DB::table('tag_student')->insert([
-                'tag_id'   => $tagStudent,
-                'username' => $user->username,
-            ]);
-            return redirect('/student');
+//            echo($tagStudent);
+            if(!$check)
+            {
+                DB::table('tag_student')->insert([
+                    'tag_id'   => $tagStudent,
+                    'username' => $user->username,
+                ]);
+                return redirect('/student');
+            }
+
+            else{
+                $error = "Tag name under your profile already exists";
+                return redirect('/student')->withErrors($error);
+            }
         }
 
         else {
@@ -121,6 +132,8 @@ class TagStudentController extends Controller {
 //            $tag->delete();
 //            return redirect('/dash-board');
 //        }
+
+
 
         DB::table('tag_student')
             ->where('tag_id', $tag)

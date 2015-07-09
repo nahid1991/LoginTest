@@ -111,7 +111,7 @@
     <div class="col-md-8 col-md-offset-2-question-left form-content">
         {!! Form::model($tag = new \App\Tag, ['url' => 'tags', 'class'=>'form form-horizontal']) !!}
         <div class="form-group">
-            <h1 style="font-weight: 900">Course adding system.</h1>
+            <h1 class="heading" style="font-weight: 900">Course adding system.</h1>
             {!! Form::label('name', 'Tag name:') !!}
             {!! Form::text('name', null, ['class'=>'form-control']) !!}
         </div>
@@ -151,7 +151,7 @@
     <div class="container">
         <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
             <p>Powered by Sayed Mahmudul Alam,
-                Nahid Islam, A.S.M. Nesar Uddin Ahmed</p>
+                Nahid Islam, A.S.M. Nesar Uddin</p>
             <br/>
             <br/>
             <br/>
