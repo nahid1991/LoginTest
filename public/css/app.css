@@ -6327,3 +6327,15 @@ h1, h2, h3{
 p, li{
     font-weight:900;
 }
+
+.col-md-12-forquestions{
+    position: relative;
+    min-height: 1px;
+    padding-top: 25px;
+    padding-left: 25px;
+    float: right;
+    width: 800px;
+    box-shadow: 10px 10px 5px #888888;
+    /*-webkit-animation: mymove 10s infinite; *//* Chrome, Safari, Opera */
+    /*animation: mymove 10s infinite;*/
+}

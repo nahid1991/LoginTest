@@ -67,7 +67,7 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
 
     Route::get('/tags/student/delete/{tag_id}', array('as' => 'tagDelete', 'uses' => 'TagStudentController@getDelete'));
 
-
+    Route::get('/questions/{tag_id}', 'QuestionController@show');
 
 });
 

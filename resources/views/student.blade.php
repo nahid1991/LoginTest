@@ -19,6 +19,11 @@
             <li><a href="{{ url('/change') }}">Add Name</a></li>
             <li><a href="{{ url('/reset') }}">Change Password</a></li>
         </ul>
+        @foreach($tagStudent as $tagStudents)
+            <ul class="nav navbar-nav">
+                <li><a href="{{   action('QuestionController@show', [$tagStudents->tag_id])  }}">{{ $tagStudents->name }}</a></li>
+            </ul>
+        @endforeach
 
 
         <ul class="nav navbar-nav navbar-right">
@@ -110,7 +115,7 @@
         <div class="form-group">
             <h1 style="font-weight: 900">Choose Tags</h1>
             {!! Form::label('tag_id', 'Tags:') !!}
-            {!! Form::select('tag_id', $intag, null, ['id'=>'intag', 'class'=>'form-control', 'mutliple']) !!}
+            {!! Form::select('tag_id', $all, null, ['id'=>'all', 'class'=>'form-control', 'mutliple']) !!}
         </div>
         <div class="form-group">
             {!!  Form::submit('Submit', ['class'=>'btn btn-primary form-control']) !!}

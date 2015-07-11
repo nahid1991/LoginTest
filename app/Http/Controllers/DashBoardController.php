@@ -24,8 +24,12 @@ class DashBoardController extends Controller {
 
     public function index()
     {
-        $intag = Tag::lists('name', 'id');
+//        $intag = Tag::lists('name', 'id');
         $user = \Auth::user();
+        $intag = DB::table('tag_faculty')
+            ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
+            ->where('username', $user->username)
+            ->lists('name', 'tag_id');
         $tags = DB::table('tag_faculty')
             ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
             ->join('users', 'tag_faculty.username', '=', 'users.username')
@@ -99,12 +103,19 @@ class DashBoardController extends Controller {
 //	}
 
     public function student(){
-        $intag = Tag::lists('name', 'id');
+//        $intag = Tag::lists('name', 'id');
+
         $user = \Auth::user();
+
+        $all = Tag::lists('name', 'id');
+        $intag = DB::table('tag_student')
+            ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
+            ->where('username', $user->username)
+            ->lists('name', 'tag_id');
         $tagStudent = DB::table('tag_student')
             ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
             ->where('username', $user->username)->get();
-        return view('student', compact('user','intag', 'tagStudent'));
+        return view('student', compact('user','intag', 'tagStudent', 'all'));
     }
 
 }
