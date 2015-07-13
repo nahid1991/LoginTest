@@ -6298,15 +6298,14 @@ label,
 }
 
 .propic{
-    position: relative;
     min-height: 1px;
-    padding-top: 150px;
+    /*padding-top: 150px;*/
     margin-top: 65px;
     box-shadow: 10px 10px 5px #888888;
     float: left;
     width: 150px;
-    height: 100px;
-    background-image: url("../images/propic.jpg");
+    height: 220px;
+    /*background-image: url("../images/propic.jpg");*/
     /*-webkit-animation: mymove 6s infinite; *//* Chrome, Safari, Opera */
     /*animation: mymove 6s infinite;*/
 }

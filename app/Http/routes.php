@@ -69,6 +69,8 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
 
     Route::get('/questions/{tag_id}', 'QuestionController@show');
 
+    Route::post('/propic', 'DashBoardController@propic');
+
 });
 
 

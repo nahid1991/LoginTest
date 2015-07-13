@@ -16,7 +16,6 @@
             <li><a href="{{ url('/dash-board') }}">Home</a></li>
             <li><a href="{{ url('/reset') }}">Change Password</a></li>
             <li><a href="{{ url('/change') }}">Add Name</a></li>
-
         </ul>
         @foreach($tags as $tag)
             <ul class="nav navbar-nav">
@@ -71,12 +70,27 @@
                     <p>Welcome to the Dashboard.</p>
                 </div>
             @endif
-            <div class="propic">
-                <div width="20px">
-                    {!!Form::file('image',['class'=>'btn btn-default'])!!}
-                    {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                <div class="propic">
+                    @if($user->propic)
+                        {{--<img src ="{{ $user->propic }}" width="80px" height="80px" alt="supposed to be a pic here!!!"/>--}}
+                        <div>
+                            <img src ="{{ asset($user->propic) }}" width="150px" height="150px" alt="supposed to be a pic here!!!"/>
+                            {!! Form::open(['url'=>'/propic', 'files'=>true]) !!}
+                            {!! Form::file('image',['class'=>'btn btn-default']) !!}
+                            {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                            {!! Form::close() !!}
+                        </div>
+                    @endif
+                    @if(!$user->propic)
+                        <div>
+                            <img src ="/images/propic.jpg" alt="supposed to be a pic here!!!"/>
+                            {!! Form::open(['url'=>'/propic', 'files'=>true]) !!}
+                            {!! Form::file('image',['class'=>'btn btn-default']) !!}
+                            {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                            {!! Form::close() !!}
+                        </div>
+                    @endif
                 </div>
-            </div>
         </div>
     </div>
 

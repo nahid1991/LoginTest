@@ -72,11 +72,25 @@
                 </div>
             @endif
             <div class="propic">
+                @if($user->propic)
+                {{--<img src ="{{ $user->propic }}" width="80px" height="80px" alt="supposed to be a pic here!!!"/>--}}
                 <div>
-
-                    {!!Form::file('image',['class'=>'btn btn-default'])!!}
-                    {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                    <img src ="{{ asset($user->propic) }}" width="150px" height="150px" alt="supposed to be a pic here!!!"/>
+                    {!! Form::open(['url'=>'/propic', 'files'=>true]) !!}
+                        {!! Form::file('image',['class'=>'btn btn-default']) !!}
+                        {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                    {!! Form::close() !!}
                 </div>
+                @endif
+                @if(!$user->propic)
+                <div>
+                    <img src ="/images/propic.jpg" alt="supposed to be a pic here!!!"/>
+                    {!! Form::open(['url'=>'/propic', 'files'=>true]) !!}
+                    {!! Form::file('image',['class'=>'btn btn-default']) !!}
+                    {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                    {!! Form::close() !!}
+                </div>
+                @endif
             </div>
         </div>
     </div>
@@ -150,9 +164,11 @@
 
 
     </div>
+
+
 @stop
 
-@section('footer')
+@section('footer')d
     <div class="container">
         <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
             <p>Powered by Sayed Mahmudul Alam,

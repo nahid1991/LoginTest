@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
 use App\Tag;
+use Illuminate\Support\Facades\Input;
 
 class DashBoardController extends Controller {
 
@@ -116,6 +117,37 @@ class DashBoardController extends Controller {
             ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
             ->where('username', $user->username)->get();
         return view('student', compact('user','intag', 'tagStudent', 'all'));
+    }
+
+    public function propic()
+    {
+//        $file = Input::file('image')->getRealPath();
+//        $file_name = Input::file('image')->getClientOriginalName();
+//        $original = $directory['dirname']."\\".$file_name;
+        $destination = 'propics/';
+        $file = Input::file('image')->getClientOriginalExtension();
+
+//        Input::file('image')->move($destination);
+//        $file = Input::file('image')->getMimeType();
+//        $original = $file->getRealPath();
+        $user = \Auth::user();
+        $imagename = $user->id.".".$file;
+        $path = str_replace("\\", "/", Input::file('image')->move($destination."/", $imagename));
+
+        DB::table('users')->where('username', $user->username)
+            ->update([
+               'propic' => $path
+            ]);
+
+        if($user->user_type == 2)
+        {
+            return redirect('/student');
+        }
+        if($user->user_type == 3)
+        {
+            return redirect('/dash-board');
+        }
+//        echo($path);
     }
 
 }
