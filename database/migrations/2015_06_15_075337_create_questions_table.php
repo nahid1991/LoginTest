@@ -14,7 +14,7 @@ class CreateQuestionsTable extends Migration {
 	{
 		Schema::create('questions', function(Blueprint $table)
 		{
-			$table->increments('id');
+			$table->increments('que_id');
             $table->boolean('answered');
             $table->integer('likes');
             $table->integer('dislikes');

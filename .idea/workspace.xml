@@ -34,18 +34,82 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="3077">
-              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="3077">
+              <caret line="21" column="87" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DashBoardController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DashBoardController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashBoardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.431694" vertical-offset="1924" max-vertical-offset="2601">
+            <state vertical-scroll-proportion="-17.538462" vertical-offset="1992" max-vertical-offset="2601">
               <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questionofstudent.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/questionofstudent.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.230769" vertical-offset="883" max-vertical-offset="1683">
+              <caret line="63" column="94" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
+              <folding>
+                <element signature="e#3248#3265#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_06_15_075337_create_questions_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_075337_create_questions_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="680">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.192308" vertical-offset="1363" max-vertical-offset="2006">
+              <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_06_15_075640_create_comments_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_075640_create_comments_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="663">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/questions.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2881356" vertical-offset="969" max-vertical-offset="1683">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="e#3251#3268#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.884615" vertical-offset="649" max-vertical-offset="1309">
+              <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -56,9 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Requests/Request.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NewController.php" />
@@ -84,9 +145,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/TagController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_08_190517_create_student_tag_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TagStudentController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_12_155120_create_user_pic_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_07_12_193105_create_user_propic_table.php" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
@@ -101,12 +160,17 @@
         <option value="$PROJECT_DIR$/resources/views/homepage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/name.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/otherspassword.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/questionofstudent.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/questions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/student.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/studentname.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/studentpass.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_06_15_075337_create_questions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_06_16_142116_create_comments_extra_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_06_15_075640_create_comments_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
+        <option value="$PROJECT_DIR$/resources/views/questionofstudent.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/questions.blade.php" />
       </list>
     </option>
   </component>
@@ -148,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,38 +273,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="propics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,13 +319,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/app.blade.php&#10;stude&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;login&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/auth/login.blade.php&#10;da&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/dashboard.blade.php&#10;student&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/DashBoardController.php&#10;stu&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;st&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;rou&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;question&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/questions.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/dashboard.blade.php&#10;route&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;tag&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/TagStudentController.php&#10;quest&#9;null&#9;null&#10;rout&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;other&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/others.blade.php&#10;r&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;auth&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/Auth/AuthController.php&#10;tags&#9;null&#9;null&#10;others&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/others.blade.php&#10;ta&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/tag.blade.php&#10;form-gr&#9;null&#9;null&#10;app.css&#9;FILE&#9;file://C:/wamp/www/LoginTest/public/css/app.css&#10;name&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/NameResetController.php&#10;s&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;pass&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/PassResetController.php&#10;studen&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;hel&#9;FILE&#9;file://C:/wamp/www/LoginTest/vendor/laravel/framework/src/Illuminate/Support/helpers.php&#10;helpers.php&#9;FILE&#9;file://C:/wamp/www/LoginTest/vendor/illuminate/html/helpers.php&#10;oute&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;pas&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/PassResetController.php&#10;autoloa&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/composer/autoload_classmap.php&#10;rese&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php&#10;adm&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/adminpassword.blade.php&#10;Auth&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/Auth/AuthController.php&#10;admin&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/AdminController.php&#10;aut&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/Auth/AuthController.php&#10;user&#9;FILE&#9;file://C:/wamp/www/NSUForum/database/migrations/2014_10_12_000000_create_users_table.php&#10;new&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/NewController.php&#10;home&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/home.blade.php&#10;wel&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/welcome.blade.php&#10;in&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php&#10;welcome&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/welcome.blade.php&#10;In&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php&#10;Ins&#9;null&#9;null&#10;Authenticate&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Middleware/Authenticate.php&#10;kerne&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Kernel.php&#10;authe&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Middleware/Authenticate.php&#10;homepa&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/homepage.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="que&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/questions.blade.php&#10;route&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;ques&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/questions.blade.php&#10;dash&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/DashBoardController.php&#10;app&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/app.blade.php&#10;stude&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;login&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/auth/login.blade.php&#10;da&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/dashboard.blade.php&#10;student&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;stu&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;st&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;rou&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;question&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/questions.blade.php&#10;das&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/dashboard.blade.php&#10;tag&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/TagStudentController.php&#10;quest&#9;null&#9;null&#10;rout&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;other&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/others.blade.php&#10;r&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;auth&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/Auth/AuthController.php&#10;tags&#9;null&#9;null&#10;others&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/others.blade.php&#10;ta&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/tag.blade.php&#10;form-gr&#9;null&#9;null&#10;app.css&#9;FILE&#9;file://C:/wamp/www/LoginTest/public/css/app.css&#10;name&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/NameResetController.php&#10;s&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;pass&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/PassResetController.php&#10;studen&#9;FILE&#9;file://C:/wamp/www/LoginTest/resources/views/student.blade.php&#10;hel&#9;FILE&#9;file://C:/wamp/www/LoginTest/vendor/laravel/framework/src/Illuminate/Support/helpers.php&#10;helpers.php&#9;FILE&#9;file://C:/wamp/www/LoginTest/vendor/illuminate/html/helpers.php&#10;oute&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/routes.php&#10;pas&#9;FILE&#9;file://C:/wamp/www/LoginTest/app/Http/Controllers/PassResetController.php&#10;autoloa&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/composer/autoload_classmap.php&#10;rese&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php&#10;adm&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/adminpassword.blade.php&#10;Auth&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/Auth/AuthController.php&#10;admin&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/AdminController.php&#10;aut&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/Auth/AuthController.php&#10;user&#9;FILE&#9;file://C:/wamp/www/NSUForum/database/migrations/2014_10_12_000000_create_users_table.php&#10;new&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Controllers/NewController.php&#10;home&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/home.blade.php&#10;wel&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/welcome.blade.php&#10;in&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php&#10;welcome&#9;FILE&#9;file://C:/wamp/www/NSUForum/resources/views/welcome.blade.php&#10;In&#9;FILE&#9;file://C:/wamp/www/NSUForum/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php&#10;Ins&#9;null&#9;null&#10;Authenticate&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Middleware/Authenticate.php&#10;kerne&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Kernel.php&#10;authe&#9;FILE&#9;file://C:/wamp/www/NSUForum/app/Http/Middleware/Authenticate.php" />
     <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -329,6 +361,9 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -336,9 +371,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -362,24 +394,24 @@
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3137255" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3120915" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290469" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3343419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -399,9 +431,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27760968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -427,27 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65217394" vertical-offset="0" max-vertical-offset="391">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_16_143124_create_dislike_extra_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3154122" vertical-offset="96" max-vertical-offset="680">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.670251" vertical-offset="3232" max-vertical-offset="5134">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/illuminate/html/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
@@ -539,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385" vertical-offset="765" max-vertical-offset="2040">
-          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_07_08_063313_create_question_body_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.769231" vertical-offset="54" max-vertical-offset="697">
@@ -583,13 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8530466" vertical-offset="0" max-vertical-offset="663">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1275">
-          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -696,20 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/questionofstudent.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.115385" vertical-offset="1036" max-vertical-offset="1598">
-          <caret line="81" column="81" selection-start-line="81" selection-start-column="81" selection-end-line="81" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/questions.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="1020" max-vertical-offset="1598">
-          <caret line="81" column="81" selection-start-line="81" selection-start-column="81" selection-end-line="81" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/studentpass.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1717">
@@ -767,19 +750,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_16_142116_create_comments_extra_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="3077">
-          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5788531" vertical-offset="0" max-vertical-offset="765">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_075337_create_questions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="680">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_075640_create_comments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="663">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashBoardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.431694" vertical-offset="1924" max-vertical-offset="2601">
+        <state vertical-scroll-proportion="-17.538462" vertical-offset="1992" max-vertical-offset="2601">
           <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="3077">
+          <caret line="21" column="87" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.884615" vertical-offset="649" max-vertical-offset="1309">
+          <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.192308" vertical-offset="1363" max-vertical-offset="2006">
+          <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/questionofstudent.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.230769" vertical-offset="883" max-vertical-offset="1683">
+          <caret line="63" column="94" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
+          <folding>
+            <element signature="e#3248#3265#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/questions.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2881356" vertical-offset="969" max-vertical-offset="1683">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#3251#3268#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -61,8 +61,13 @@
                 <div class="col-md-12-forquestions">
                     <ul>
                         <li>
-                            <h3><a href="#">{{ $questions->title }}</a></h3>
-                            <p><small>by <a href="#">{{ $questions->real_name }}</a></small></p>
+                            <h3><a href="{{   action('QuestionController@details', [$questions->que_id])  }}">{{ $questions->title }}</a></h3>
+                            @if($questions->real_name)
+                                <p><small>by <a href="#">{{ $questions->real_name }}</a></small></p>
+                            @endif
+                            @if(!$questions->real_name)
+                                <p><small>by <a href="#">{{ $questions->username }}</a></small></p>
+                            @endif
                         </li>
                     </ul>
                 </div>

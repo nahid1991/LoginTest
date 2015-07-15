@@ -18,7 +18,7 @@ class CreateCommentsExtraTable extends Migration {
             $table->foreign('username')->references('username')->on('users')->onDelete('cascade');
             $table->boolean('correct');
             $table->integer('q_id')->unsigned()->index();
-            $table->foreign('q_id')->references('id')->on('questions')->onDelete('cascade');
+            $table->foreign('q_id')->references('que_id')->on('questions')->onDelete('cascade');
         });
 	}
 

@@ -111,4 +111,9 @@ class QuestionController extends Controller {
 		//
 	}
 
+    public function details($id)
+    {
+        echo($id);
+    }
+
 }
