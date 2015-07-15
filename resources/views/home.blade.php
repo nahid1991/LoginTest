@@ -15,4 +15,19 @@
 		</div>
 	</div>
 </div>
+
+
 @endsection
+@section('footer')
+    <div class="container">
+        <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
+            <p>Powered by Sayed Mahmudul Alam,
+                Nahid Islam, A.S.M. Nesar Uddin</p>
+            <marquee><p style="color:red">Mostly Nahid Islam though</p></marquee>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+@stop

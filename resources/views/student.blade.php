@@ -86,8 +86,8 @@
                 <div>
                     <img src ="/images/propic.jpg" alt="supposed to be a pic here!!!"/>
                     {!! Form::open(['url'=>'/propic', 'files'=>true]) !!}
-                    {!! Form::file('image',['class'=>'btn btn-default']) !!}
-                    {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
+                        {!! Form::file('image',['class'=>'btn btn-default']) !!}
+                        {!!  Form::submit('Set this pic', ['class'=>'btn btn-primary form-control']) !!}
                     {!! Form::close() !!}
                 </div>
                 @endif
@@ -165,7 +165,6 @@
 
     </div>
 
-
 @stop
 
 @section('footer')d
@@ -173,6 +172,7 @@
         <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
             <p>Powered by Sayed Mahmudul Alam,
                 Nahid Islam, A.S.M. Nesar Uddin.</p>
+            <marquee><p style="color:red">Mostly Nahid Islam though</p></marquee>
             <br/>
             <br/>
             <br/>

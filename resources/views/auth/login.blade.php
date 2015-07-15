@@ -5,7 +5,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li style="font-size:900%; padding-top:90px"><a href="{{ url('/') }}">NSU Forum</a></li>
+            <li style="font-size:900%; padding-top:90px"><marquee><a href="{{ url('/') }}">NSU Forum</a></marquee></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
@@ -70,6 +70,7 @@
         <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
             <p>Powered by Sayed Mahmudul Alam,
                 Nahid Islam, A.S.M. Nesar Uddin</p>
+            <marquee><p style="color:red">Mostly Nahid Islam though</p></marquee>
             <br/>
             <br/>
             <br/>
