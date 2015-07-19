@@ -80,17 +80,19 @@
                     @endif
                 </div>
 
-                    <div class="col-md-12-questions">
-                        <h1 style="color:#3c763d">Asked question:</h1>
-                        <h2><b>{{ $questions->title }}</b></h2>
-                        <p>{{ $questions->body }}</p>
-                        <p>
-                            {{ $questions->likes }}
-                            <a href="{{   action('QuestionController@liked', [$questions->que_id])  }}"><img src="../images/notliked.png" height="40px" width="30px"></a>
-                            {{ $questions->dislikes }}
-                            <a href="{{   action('QuestionController@disliked', [$questions->que_id])  }}"><img src="../images/downvote.png" height="18px" width="13px"></a>
-                        </p>
-                    </div>
+                <div class="col-md-12-questions">
+                    <h1 style="color:#3c763d">Asked question:</h1>
+                    <h2><b>{{ $questions->title }}</b></h2>
+                    <p>{{ $questions->body }}</p>
+                    <p>
+                        {{ $questions->likes }}
+                        <a href="{{   action('QuestionController@liked', [$questions->que_id])  }}"><img src="../images/notliked.png" height="40px" width="30px"></a>
+                        {{ $questions->dislikes }}
+                        <a href="{{   action('QuestionController@disliked', [$questions->que_id])  }}"><img src="../images/downvote.png" height="18px" width="13px"></a>
+                    </p>
+                </div>
+
+
             </div>
         </div>
     @endforeach
