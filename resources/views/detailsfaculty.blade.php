@@ -1,4 +1,3 @@
-<!-- -->
 @extends('others')
 
 @section('something')
@@ -49,40 +48,53 @@
 @stop
 
 
-
-
 @section('main')
 
+    @foreach($question as $questions)
     <div class="container">
         <div class="row">
-            <h1 style="margin-left: 25px">Questions So far</h1>
-            @foreach($question as $questions)
-                <div class="col-md-12-forquestions">
-                    <ul>
-                        <li>
-                            <h3><a href="{{   action('QuestionController@details', [$questions->que_id])  }}">{{ $questions->title }}</a></h3>
-                            @if($questions->real_name)
-                                <p><small>by <a href="#">{{ $questions->real_name }}</a></small></p>
-                            @endif
-                            @if(!$questions->real_name)
-                                <p><small>by <a href="#">{{ $questions->username }}</a></small></p>
-                            @endif
-                        </li>
-                    </ul>
+            @if($questions->real_name)
+                <div class="col-md-12-details">
+                    <a href="#"><h1>{{ $questions->real_name }}</h1></a>
+                    <a href="#"><p>{{ $questions->username }}</p></a>
+                    <p><small>{{ $questions->dept_name }} Department</small></p>
                 </div>
-            @endforeach
+            @endif
+            @if(!$questions->real_name)
+                <div class="col-md-12-details">
+                    <a href="#"><h1>{{ $questions->username }}</h1></a>
+                    <p><small>{{ $questions->dept_name }} Department</small></p>
+                </div>
+            @endif
+            <div class="propic-question">
+                @if($questions->propic)
+                    {{--<img src ="{{ $user->propic }}" width="80px" height="80px" alt="supposed to be a pic here!!!"/>--}}
+                    <div>
+                        <img src ="{{ asset($questions->propic) }}" width="150px" height="150px" alt="supposed to be a pic here!!!"/>
+                    </div>
+                @endif
+                @if(!$questions->propic)
+                    <div>
+                        <img src ="/images/propic.jpg" alt="supposed to be a pic here!!!"/>
+                    </div>
+                @endif
+            </div>
+            <div class="col-md-12-questions">
+                <h1 style="color:#3c763d">Asked question:</h1>
+                <h2><b>{{ $questions->title }}</b></h2>
+                <p>{{ $questions->body }}</p>
+            </div>
         </div>
     </div>
+    @endforeach
 
 @stop
-
-
 
 @section('footer')
     <div class="container">
         <div class="row" style="text-align: center; font-size: 15px; padding-top: 20px">
             <p>Powered by Sayed Mahmudul Alam,
-                Nahid Islam, A.S.M. Nesar Uddin</p>
+                Nahid Islam, A.S.M. Nesar Uddin.</p>
             <marquee><p style="color:red">Mostly Nahid Islam though</p></marquee>
             <br/>
             <br/>

@@ -73,6 +73,10 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
 
     Route::get('/details/{que_id}', 'QuestionController@details');
 
+    Route::get('/liked/{que_id}', 'QuestionController@liked');
+
+    Route::get('/disliked/{que_id}', 'QuestionController@disliked');
+
 });
 
 

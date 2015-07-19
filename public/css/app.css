@@ -6310,6 +6310,21 @@ label,
     /*animation: mymove 6s infinite;*/
 }
 
+.propic-question{
+    min-height: 1px;
+    /*padding-top: 150px;*/
+    margin-top: 65px;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    /*background-image: url("../images/propic.jpg");*/
+    /*-webkit-animation: mymove 6s infinite; *//* Chrome, Safari, Opera */
+    /*animation: mymove 6s infinite;*/
+}
+
 /*@-webkit-keyframes mymove {*/
     /*50% {box-shadow: 10px 20px 30px #001A23;}*/
 /*}*/
@@ -6335,6 +6350,33 @@ p, li{
     float: right;
     width: 800px;
     box-shadow: 10px 10px 5px #888888;
+    /*-webkit-animation: mymove 10s infinite; *//* Chrome, Safari, Opera */
+    /*animation: mymove 10s infinite;*/
+}
+
+.col-md-12-details{
+    position: relative;
+    min-height: 1px;
+    padding-top: 50px;
+    padding-right: 100px;
+    float: right;
+    width: 900px;
+    margin-bottom: 20px;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    /*-webkit-animation: mymove 10s infinite; *//* Chrome, Safari, Opera */
+    /*animation: mymove 10s infinite;*/
+}
+
+
+.col-md-12-questions{
+    position: relative;
+    min-height: 1px;
+    padding-top: 20px;
+    padding-right: 100px;
+    float: right;
+    width: 900px;
+    margin-bottom: 20px;
+    /*box-shadow: 10px 10px 5px #888888;*/
     /*-webkit-animation: mymove 10s infinite; *//* Chrome, Safari, Opera */
     /*animation: mymove 10s infinite;*/
 }

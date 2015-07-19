@@ -16,9 +16,9 @@ class CreateLikeExtraTable extends Migration {
         {
             $table->string('username')->index();
             $table->foreign('username')->references('username')->on('users')->onDelete('cascade');
-            $table->integer('q_id')->unsigned()->index();
+            $table->integer('q_id')->unsigned()->index()->nullable();
             $table->foreign('q_id')->references('que_id')->on('questions')->onDelete('cascade');
-            $table->integer('cmnt_id')->unsigned()->index();
+            $table->integer('cmnt_id')->unsigned()->index()->nullable();
             $table->foreign('cmnt_id')->references('comment_id')->on('comments')->onDelete('cascade');
         });
 	}

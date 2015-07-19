@@ -14,9 +14,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="{{ url('/student') }}">Home</a></li>
-            <li><a href="{{ url('/reset') }}">Change Password</a></li>
             <li><a href="{{ url('/change') }}">Add Name</a></li>
-
+            <li><a href="{{ url('/reset') }}">Change Password</a></li>
         </ul>
         @foreach($tags as $tag)
             <ul class="nav navbar-nav">
