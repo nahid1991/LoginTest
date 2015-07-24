@@ -192,36 +192,37 @@ class QuestionController extends Controller {
                 ->increment('likes', 1);
 
 
-            if($user->user_type == 2)
-            {
-                $tagStudent = DB::table('tag_student')
-                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_student.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
-            }
-
-
-            if($user->user_type == 3)
-            {
-                $tags = DB::table('tag_faculty')
-                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_faculty.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsfaculty', compact('user', 'tags', 'question'));
-            }
+//            if($user->user_type == 2)
+//            {
+//                $tagStudent = DB::table('tag_student')
+//                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
+//                    ->join('users', 'tag_student.username', '=', 'users.username')
+//                    ->where('users.username', $user->username)
+//                    ->get();
+//                $question = DB::table('questions')
+//                    ->join('users', 'questions.username', '=', 'users.username')
+//                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
+//                    ->where('questions.que_id', $id)
+//                    ->get();
+//                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
+//            }
+//
+//
+//            if($user->user_type == 3)
+//            {
+//                $tags = DB::table('tag_faculty')
+//                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
+//                    ->join('users', 'tag_faculty.username', '=', 'users.username')
+//                    ->where('users.username', $user->username)
+//                    ->get();
+//                $question = DB::table('questions')
+//                    ->join('users', 'questions.username', '=', 'users.username')
+//                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
+//                    ->where('questions.que_id', $id)
+//                    ->get();
+//                return view('detailsfaculty', compact('user', 'tags', 'question'));
+//            }
+            return redirect('/details/'.$id);
 
         }
 
@@ -239,36 +240,37 @@ class QuestionController extends Controller {
                 ->decrement('likes', 1);
 
 
-            if($user->user_type == 2)
-            {
-                $tagStudent = DB::table('tag_student')
-                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_student.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
-            }
-
-
-            if($user->user_type == 3)
-            {
-                $tags = DB::table('tag_faculty')
-                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_faculty.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsfaculty', compact('user', 'tags', 'question'));
-            }
+//            if($user->user_type == 2)
+//            {
+//                $tagStudent = DB::table('tag_student')
+//                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
+//                    ->join('users', 'tag_student.username', '=', 'users.username')
+//                    ->where('users.username', $user->username)
+//                    ->get();
+//                $question = DB::table('questions')
+//                    ->join('users', 'questions.username', '=', 'users.username')
+//                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
+//                    ->where('questions.que_id', $id)
+//                    ->get();
+//                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
+//            }
+//
+//
+//            if($user->user_type == 3)
+//            {
+//                $tags = DB::table('tag_faculty')
+//                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
+//                    ->join('users', 'tag_faculty.username', '=', 'users.username')
+//                    ->where('users.username', $user->username)
+//                    ->get();
+//                $question = DB::table('questions')
+//                    ->join('users', 'questions.username', '=', 'users.username')
+//                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
+//                    ->where('questions.que_id', $id)
+//                    ->get();
+//                return view('detailsfaculty', compact('user', 'tags', 'question'));
+//            }
+            return redirect('/details/'.$id);
         }
 
     }
@@ -329,36 +331,8 @@ class QuestionController extends Controller {
                 ->where('questions.que_id', $id)
                 ->increment('dislikes', 1);
 
-            if($user->user_type == 2)
-            {
-                $tagStudent = DB::table('tag_student')
-                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_student.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
-            }
 
-
-            if($user->user_type == 3)
-            {
-                $tags = DB::table('tag_faculty')
-                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_faculty.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsfaculty', compact('user', 'tags', 'question'));
-            }
+            return redirect('/details/'.$id);
         }
 
 
@@ -376,37 +350,7 @@ class QuestionController extends Controller {
                 ->where('questions.que_id', $id)
                 ->decrement('dislikes', 1);
 
-
-            if($user->user_type == 2)
-            {
-                $tagStudent = DB::table('tag_student')
-                    ->join('tags', 'tag_student.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_student.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsstudent', compact('user', 'tagStudent', 'question'));
-            }
-
-
-            if($user->user_type == 3)
-            {
-                $tags = DB::table('tag_faculty')
-                    ->join('tags', 'tag_faculty.tag_id', '=', 'tags.id')
-                    ->join('users', 'tag_faculty.username', '=', 'users.username')
-                    ->where('users.username', $user->username)
-                    ->get();
-                $question = DB::table('questions')
-                    ->join('users', 'questions.username', '=', 'users.username')
-                    ->join('tags', 'questions.tag_id', '=', 'tags.id')
-                    ->where('questions.que_id', $id)
-                    ->get();
-                return view('detailsfaculty', compact('user', 'tags', 'question'));
-            }
+            return redirect('/details/'.$id);
         }
 
     }

@@ -58,7 +58,7 @@
             <input name="user_type" type="radio" value="3">Faculty</input>
         </div>
         <div class="text-center">
-            {!!Form::submit('Login',['class'=>'btn btn-default'])!!}
+            {!!Form::submit('Login',['class'=>'btn btn-primary form-control'])!!}
         </div>
         {!!Form::close()!!}
     </div>

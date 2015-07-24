@@ -6349,7 +6349,7 @@ p, li{
     padding-left: 25px;
     float: right;
     width: 800px;
-    box-shadow: 10px 10px 5px #888888;
+    /*box-shadow: 10px 10px 5px #888888;*/
     /*-webkit-animation: mymove 10s infinite; *//* Chrome, Safari, Opera */
     /*animation: mymove 10s infinite;*/
 }

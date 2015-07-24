@@ -125,7 +125,7 @@
     <div class="col-md-8 col-md-offset-2-question-left form-content">
         {!! Form::model($tag = new \App\Tag, ['url' => 'tags', 'class'=>'form form-horizontal']) !!}
         <div class="form-group">
-            <h1 class="heading" style="font-weight: 900">Course adding system.</h1>
+            <h1 class="heading" style="font-weight: 900; padding-left: 15px">Course adding system.</h1>
             {!! Form::label('name', 'Tag name:') !!}
             {!! Form::text('name', null, ['class'=>'form-control']) !!}
         </div>

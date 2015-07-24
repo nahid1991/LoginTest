@@ -19,7 +19,7 @@
         </ul>
         @foreach($tags as $tag)
             <ul class="nav navbar-nav">
-                <li><a href="{{   action('QuestionController@show', [$tag->tag_id])  }}">{{ $tag->name }}</a></li>
+                <li><a href="{{  action('QuestionController@show', [$tag->tag_id])  }}">{{ $tag->name }}</a></li>
             </ul>
         @endforeach
 

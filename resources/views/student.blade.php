@@ -127,7 +127,7 @@
     <div class="col-md-8 col-md-offset-2-question-left form-content">
         {!! Form::open(['url' => '/tags/student', 'class'=>'form form-horizontal']) !!}
         <div class="form-group">
-            <h1 style="font-weight: 900">Choose Tags</h1>
+            <h1 style="font-weight: 900; padding-left: 15px;">Choose Tags</h1>
             {!! Form::label('tag_id', 'Tags:') !!}
             {!! Form::select('tag_id', $all, null, ['id'=>'all', 'class'=>'form-control', 'mutliple']) !!}
         </div>
