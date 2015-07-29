@@ -1885,6 +1885,17 @@ pre code {
         float: right;
     }
 
+    .col-md-offset-2-comment {
+        margin-right: 16.66666667%;
+        margin-left: 16.66666667%;
+        background-color: #B2CEDE;
+        margin-top: 10px;
+        box-shadow: 10px 10px 5px #888888;
+        margin-bottom: 10px;
+        /*width: 500px;*/
+        /*float: right;*/
+    }
+
     .col-md-offset-2-question-left {
         margin-left: 16.66666667%;
         background-color: #B2CEDE;

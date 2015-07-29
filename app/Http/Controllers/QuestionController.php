@@ -127,7 +127,13 @@ class QuestionController extends Controller {
                 ->join('tags', 'questions.tag_id', '=', 'tags.id')
                 ->where('questions.que_id', $id)
                 ->get();
-            return view('detailsfaculty', compact('user', 'tags', 'question'));
+            $comment = DB::table('comments')
+                ->join('questions', 'comments.q_id', '=', 'questions.que_id')
+                ->join('users', 'comments.username', '=', 'users.username')
+                ->where('q_id', '=', $id)
+                ->orderBy('comments.created_at', 'asc')
+                ->get();
+            return view('detailsfaculty', compact('user', 'tags', 'question', 'comment'));
         }
 
         if($user->user_type == 2)
@@ -142,7 +148,13 @@ class QuestionController extends Controller {
                 ->join('tags', 'questions.tag_id', '=', 'tags.id')
                 ->where('questions.que_id', $id)
                 ->get();
-            return view('detailsstudent', compact('user', 'tagStudent', 'question'));
+            $comment = DB::table('comments')
+                ->join('questions', 'comments.q_id', '=', 'questions.que_id')
+                ->join('users', 'comments.username', '=', 'users.username')
+                ->where('q_id', '=', $id)
+                ->orderBy('comments.created_at', 'asc')
+                ->get();
+            return view('detailsstudent', compact('user', 'tagStudent', 'question', 'comment'));
         }
     }
 

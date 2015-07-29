@@ -13,7 +13,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="{{ url('/dash-board') }}">Home</a></li>
-            <li><a href="{{ url('/change') }}">Add Name</a></li>
+            @if(!$user->real_name)
+                <li><a href="{{ url('/change') }}">Add Name</a></li>
+            @endif
             <li><a href="{{ url('/reset') }}">Change Password</a></li>
         </ul>
         @foreach($tags as $tag)
@@ -93,6 +95,39 @@
         </div>
     </div>
     @endforeach
+
+    @foreach($comment as $comments)
+        <div class="col-md-8 col-md-offset-2-comment form-content">
+
+            <h3><a href="#"><img src="{{ asset($comments->propic) }}" width="30px" height="30px"/></a>
+                <a href="#">{{ $comments->real_name }}</a></h3>
+            <h4>{{ $comments->comment_body }}</h4>
+        </div>
+    @endforeach
+
+    @foreach($question as $questions)
+    <div class="col-md-8 col-md-offset-2-comment form-content">
+
+        <h1 class="heading">Try to answer</h1>
+        <h3><a href="#">{{ $user->real_name }}</a></h3>
+        @foreach($errors->all() as $error)
+            <p class="alert alert-danger">{!!$error!!}</p>
+        @endforeach
+        {!! Form::open(['url' => '/comment', 'class'=>'form form-horizontal']) !!}
+        <input type="hidden" name="q_id" value="{{ $questions->que_id }}"/>
+        {{--<input type="hidden" name="username" value="{{ $user->username }}"/>--}}
+        <div class="form-group">
+            {!! Form::label('comment_body', 'Your answer:') !!}
+            {!! Form::textarea('comment_body', null, ['class'=>'form-control']) !!}
+        </div>
+        <div class="form-group">
+            {!!  Form::submit('Answer', ['class'=>'btn btn-primary form-control']) !!}
+        </div>
+        {!!Form::close()!!}
+    </div>
+    @endforeach
+
+
 
 @stop
 

@@ -14,8 +14,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="{{ url('/dash-board') }}">Home</a></li>
+
+            @if(!$user->real_name)
+                <li><a href="{{ url('/change') }}">Add Name</a></li>
+            @endif
             <li><a href="{{ url('/reset') }}">Change Password</a></li>
-            <li><a href="{{ url('/change') }}">Add Name</a></li>
         </ul>
         @foreach($tags as $tag)
             <ul class="nav navbar-nav">

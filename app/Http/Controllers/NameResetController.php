@@ -32,6 +32,6 @@ class NameResetController extends Controller {
 //        DB::table('users')->where('username', '=', $user->username)->delete('password');
         DB::table('users')->where('username', '=', $user->username)
             ->update(['real_name' => Input::get('name')]);
-        return redirect('/change');
+        return redirect('/dash-board');
     }
 }

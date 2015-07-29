@@ -26,12 +26,14 @@ class PassResetController extends Controller {
 
         if($user->user_type == 1)
         {
-            return view('adminpassword');
+            $user = \Auth::user();
+            return view('adminpassword', compact('user'));
         }
 
         if($user->user_type == 2)
         {
-            return view('studentpass');
+            $user = \Auth::user();
+            return view('studentpass', compact('user'));
         }
     }
 

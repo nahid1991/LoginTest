@@ -44,14 +44,19 @@ class AdminController extends Controller {
 //        $file = array('name' => Input::file('name'));
 
         $file = Input::file('name')->getRealPath();
-        $content = \File::get($file);
+//        $content = \File::get($file);
         $lines = file($file, FILE_IGNORE_NEW_LINES);
 //        echo(sizeof($lines));
         $j = 0;
         while($j < sizeof($lines))
         {
             $helper = (explode(" ", $lines[$j]));
-            DB::table('users')->insert(
+            $emailverify = DB::table('users')
+                ->where('email', '=', $helper[0])->get();
+            $usernameverify = DB::table('users')
+                ->where('username', '=', $helper[1])->get();
+            if(!$emailverify || !$usernameverify){
+                DB::table('users')->insert(
                     [
                         'email'     => $helper[0],
                         'username'  => $helper[1],
@@ -59,6 +64,8 @@ class AdminController extends Controller {
                         'user_type' => $helper[3],
                         'dept_name' => $helper[4],
                     ]);
+            }
+
             $j++;
         }
 

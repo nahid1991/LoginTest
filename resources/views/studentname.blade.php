@@ -16,7 +16,7 @@
             <li><a href="{{ url('/student') }}">Home</a></li>
             <li><a href="{{ url('/change') }}">Add Name</a></li>
             <li><a href="{{ url('/reset') }}">Change Password</a></li>
-            <li></li>
+
         </ul>
 
 
