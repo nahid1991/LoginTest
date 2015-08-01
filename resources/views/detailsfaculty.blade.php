@@ -99,8 +99,20 @@
     @foreach($comment as $comments)
         <div class="col-md-8 col-md-offset-2-comment form-content">
 
-            <h3><a href="#"><img src="{{ asset($comments->propic) }}" width="30px" height="30px"/></a>
-                <a href="#">{{ $comments->real_name }}</a></h3>
+            <h3>@if($comments->propic)
+                    <a href="#"><img src="{{ asset($comments->propic) }}" width="30px" height="30px"/></a>
+                @endif
+                @if(!$comments->propic)
+                    <a href="#"><img src="/images/propic.jpg" width="30px" height="30px"/></a>
+                @endif
+                @if($comments->real_name)
+                    <a href="#">{{ $comments->real_name }}</a>
+                @endif
+
+                @if(!$comments->real_name)
+                    <a href="#">{{ $comments->username }}</a>
+                @endif
+            </h3>
             <h4>{{ $comments->comment_body }}</h4>
             <p>
                 {{ $comments->comment_likes }}
