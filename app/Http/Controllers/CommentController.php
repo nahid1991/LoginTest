@@ -6,6 +6,7 @@ use App\Http\Requests\CommentRequest;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Comment;
 
 class CommentController extends Controller {
 
@@ -93,5 +94,157 @@ class CommentController extends Controller {
 	{
 		//
 	}
+
+    public function liked($id)
+    {
+//        echo($id);
+        $user = \Auth::user();
+        $link = DB::table('comments')
+            ->join('questions', 'questions.que_id', '=', 'comments.q_id')
+            ->where('comment_id', '=', $id)
+            ->first();
+
+
+
+        $verify = DB::table('likes')
+            ->where('username', '=', $user->username)
+            ->where('cmnt_id', '=', $id)
+            ->get();
+
+        $likeverify = DB::table('dislikes')
+            ->where('username', '=', $user->username)
+            ->where('cmnt_id', '=', $id)
+            ->get();
+
+
+
+
+        if(!$verify)
+        {
+            if($likeverify)
+            {
+                DB::table('dislikes')
+                    ->where('username', '=', $user->username)
+                    ->where('cmnt_id', '=', $id)
+                    ->delete();
+
+                DB::table('comments')
+                    ->where('comment_id', '=', $id)
+                    ->decrement('comment_dislikes', 1);
+            }
+
+            DB::table('likes')
+                ->insert([
+                    'username'   => $user->username,
+                    'cmnt_id'    => $id,
+                ]);
+
+
+
+            DB::table('comments')
+                ->where('comment_id', '=', $id)
+                ->increment('comment_likes', 1);
+
+            return redirect('/details/'.$link->que_id);
+
+        }
+
+        if($verify)
+        {
+            DB::table('likes')
+                ->where('username', '=', $user->username)
+                ->where('cmnt_id', '=', $id)
+                ->delete();
+
+            DB::table('comments')
+                ->where('comment_id', '=', $id)
+                ->decrement('comment_likes', 1);
+
+            return redirect('/details/'.$link->que_id);
+
+        }
+
+
+
+
+
+
+
+
+    }
+
+    public function disliked($id)
+    {
+//        echo($id);
+        $user = \Auth::user();
+
+        $link = DB::table('comments')
+            ->join('questions', 'questions.que_id', '=', 'comments.q_id')
+            ->where('comment_id', '=', $id)
+            ->first();
+
+
+
+        $verify = DB::table('dislikes')
+            ->where('username', '=', $user->username)
+            ->where('cmnt_id', '=', $id)
+            ->get();
+
+        $likeverify = DB::table('likes')
+            ->where('username', '=', $user->username)
+            ->where('cmnt_id', '=', $id)
+            ->get();
+
+
+
+
+        if(!$verify)
+        {
+            if($likeverify)
+            {
+                DB::table('likes')
+                    ->where('username', '=', $user->username)
+                    ->where('cmnt_id', '=', $id)
+                    ->delete();
+
+                DB::table('comments')
+                    ->where('comment_id', '=', $id)
+                    ->decrement('comment_likes', 1);
+            }
+
+            DB::table('dislikes')
+                ->insert([
+                    'username'   => $user->username,
+                    'cmnt_id'    => $id,
+                ]);
+
+
+
+            DB::table('comments')
+                ->where('comment_id', '=', $id)
+                ->increment('comment_dislikes', 1);
+
+            return redirect('/details/'.$link->que_id);
+
+        }
+
+        if($verify)
+        {
+            DB::table('dislikes')
+                ->where('username', '=', $user->username)
+                ->where('cmnt_id', '=', $id)
+                ->delete();
+
+            DB::table('comments')
+                ->where('comment_id', '=', $id)
+                ->decrement('comment_dislikes', 1);
+
+            return redirect('/details/'.$link->que_id);
+
+        }
+
+
+
+    }
 
 }

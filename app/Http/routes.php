@@ -79,6 +79,10 @@ Route::group(['middleware' => 'auth', 'after' => 'no-cache'], function () {
 
     Route::post('/comment', 'CommentController@store');
 
+    Route::get('/comment_liked/{comment_id}', 'CommentController@liked');
+
+    Route::get('/comment_disliked/{comment_id}', 'CommentController@disliked');
+
 });
 
 

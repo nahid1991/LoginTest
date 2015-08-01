@@ -102,6 +102,12 @@
             <h3><a href="#"><img src="{{ asset($comments->propic) }}" width="30px" height="30px"/></a>
                 <a href="#">{{ $comments->real_name }}</a></h3>
             <h4>{{ $comments->comment_body }}</h4>
+            <p>
+                {{ $comments->comment_likes }}
+                <a href="{{   action('CommentController@liked', [$comments->comment_id])  }}"><img src="../images/notliked.png" height="40px" width="30px"></a>
+                {{ $comments->comment_dislikes }}
+                <a href="{{   action('CommentController@disliked', [$comments->comment_id])  }}"><img src="../images/downvote.png" height="18px" width="13px"></a>
+            </p>
         </div>
     @endforeach
 
